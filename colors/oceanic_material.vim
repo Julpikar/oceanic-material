@@ -989,6 +989,17 @@ function! s:apply_syntax_highlightings()
   exec 'hi gitcommitArrow' . s:fg_grey1
   exec 'hi gitcommitFile' . s:fg_green
   "===============================================================
+  " neovim/nvim-lspconfig
+  "===============================================================
+  exec 'hi LspDiagnosticsDefaultWarning'. s:fg_yellow
+  exec 'hi LspDiagnosticsDefaultError'. s:fg_red
+  exec 'hi LspDiagnosticsDefaultInformation'. s:fg_blue
+  exec 'hi LspDiagnosticsDefaultHint'. s:fg_aqua
+  exec 'hi LspDiagnosticsUnderlineWarning' . s:fg_none . s:undercurl . s:sp_yellow . s:underline
+  exec 'hi LspDiagnosticsUnderlineError' . s:fg_none . s:undercurl . s:sp_red . s:underline
+  exec 'hi LspDiagnosticsUnderlineInformation' . s:fg_none . s:undercurl . s:sp_blue . s:underline
+  exec 'hi LspDiagnosticsUnderlineHint' . s:fg_none . s:undercurl . s:sp_aqua . s:underline
+  "===============================================================
   " neoclide/coc.nvim
   "===============================================================
   exec 'hi CocHoverRange'. s:fg_none. s:bold . s:underline
